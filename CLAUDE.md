@@ -1,3 +1,19 @@
+## 🔑 Secrets: nejdřív rozcestník, teprve pak hledání
+
+Než v tomhle projektu začneš shánět jakýkoli klíč, token nebo přístup, otevři
+**`SECRETS.md` v repu `panzik13/claude-code-config`** (detailní inventury v `secrets/`).
+Je to jediný zdroj pravdy o tom, co kde leží — GitHub Actions secrets, Vercel env,
+Supabase, cron-job.org i proměnné prostředí Claude Code.
+
+Pravidla, která platí i tady:
+
+- **Klíč z jiného projektu se nepřenáší bez Petrova souhlasu.** Když už někde
+  existuje klíč, který by se hodil i sem, **zeptej se** — nepřebírej ho sám.
+- **Hodnoty klíčů nikdy nikam nepiš** — ani do kódu, ani do dokumentace, ani do
+  logu, ani po částech. Rozcestník vede jen názvy, umístění a otisky.
+- **Odebrat klíč z kódu nestačí — musí se zrotovat.** Git historie si ho pamatuje.
+- Nový nebo zrotovaný klíč **rovnou zapiš do `SECRETS.md`**, jinak rozcestník zestárne.
+
 # CLAUDE.md
 
 ## POVINNÉ: shrnutí na konci každého delšího běhu (trvalé pravidlo Petra, 2. 8. 2026)
